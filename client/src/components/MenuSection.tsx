@@ -13,7 +13,7 @@ export function MenuSection() {
     <Section id="menu" bg="creme">
       <div className="text-center mb-12">
         <span className="text-primary font-bold tracking-widest uppercase text-sm">Fresh from the Oven</span>
-        <h2 className="text-4xl md:text-5xl font-black mt-2">Our Menu</h2>
+        <h2 className="text-4xl md:text-5xl font-logo font-bold mt-2 uppercase tracking-tight">Our Menu</h2>
       </div>
 
       {isLoading ? (
@@ -48,7 +48,7 @@ export function MenuSection() {
                       className="bg-white p-6 rounded-xl shadow-sm border border-border/50 hover:border-primary/20 hover:shadow-md transition-all group"
                     >
                       <div className="flex justify-between items-start mb-2">
-                        <h3 className="text-xl font-bold font-display group-hover:text-primary transition-colors">
+                        <h3 className="text-xl font-bold font-logo uppercase tracking-tight group-hover:text-primary transition-colors">
                           {item.name}
                         </h3>
                         <span className="text-lg font-bold text-foreground bg-secondary/10 px-3 py-1 rounded-md">

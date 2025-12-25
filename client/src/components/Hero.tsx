@@ -36,7 +36,7 @@ export function Hero() {
             From Vienna to NYC & Back
           </span>
           
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-black tracking-tighter leading-tight drop-shadow-2xl">
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-logo font-bold tracking-tighter leading-tight drop-shadow-2xl">
             THE ORIGINAL <br />
             <span className="text-primary">WIENER</span>BAGEL
           </h1>

@@ -30,7 +30,8 @@ const timelineEvents = [
     year: "2025",
     location: "Vienna, Austria",
     title: "The Homecoming",
-    description: "Wienerbagel brings the perfected NYC-style bagel back to its birthplace. The circle is complete."
+    description: "Wienerbagel brings the perfected NYC-style bagel back to its birthplace. The circle is complete.",
+    image: journeyImg
   }
 ];
 
@@ -67,7 +68,7 @@ export function StoryTimeline() {
                   <span className="text-secondary font-bold text-xl">{event.year}</span>
                   <span className="text-white/40 uppercase tracking-widest text-xs">{event.location}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3">{event.title}</h3>
+                <h3 className="text-2xl font-logo font-bold text-white mb-3 uppercase tracking-tight">{event.title}</h3>
                 <p className="text-white/60 leading-relaxed max-w-md">
                   {event.description}
                 </p>

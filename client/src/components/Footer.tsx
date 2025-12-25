@@ -2,7 +2,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white py-12 border-t border-white/10">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-display font-black text-3xl tracking-tight mb-4">
+        <h2 className="font-logo font-bold text-3xl tracking-tight mb-4 uppercase">
           WIENER<span className="text-primary">BAGEL</span>
         </h2>
         

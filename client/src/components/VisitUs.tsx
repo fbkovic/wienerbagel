@@ -10,7 +10,7 @@ export function VisitUs() {
         <div className="space-y-8">
           <div>
             <span className="text-primary font-bold tracking-widest uppercase text-sm">Visit Us</span>
-            <h2 className="text-4xl md:text-5xl font-black mt-2 mb-6">Vienna's First<br />NYC Bagel Shop</h2>
+            <h2 className="text-4xl md:text-5xl font-logo font-bold mt-2 mb-6 uppercase tracking-tight">Vienna's First<br />NYC Bagel Shop</h2>
             <p className="text-lg text-muted-foreground">
               Located in the heart of the 1st District, we're bringing the authentic New York bagel experience back to where it all began.
             </p>

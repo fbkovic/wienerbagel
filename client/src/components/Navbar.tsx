@@ -40,7 +40,7 @@ export function Navbar() {
           <Link href="/" className="group flex items-center gap-3 z-50">
             <img src={logoImg} alt="Wienerbagel Logo" className="h-10 w-auto invert dark:invert-0" />
             <div className="flex flex-col items-start">
-              <span className="font-display font-black text-xl tracking-tighter text-foreground leading-none group-hover:text-primary transition-colors">
+              <span className="font-logo font-bold text-xl tracking-tight text-foreground leading-none group-hover:text-primary transition-colors uppercase">
                 WIENER<span className="text-primary">BAGEL</span>
               </span>
               <span className="text-[0.6rem] font-medium tracking-[0.2em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
