@@ -15,7 +15,9 @@ export function VisitUs() {
             <span className="text-primary font-bold tracking-widest uppercase text-sm">{t("visit.label")}</span>
             <h2 className="text-4xl md:text-5xl font-logo font-bold mt-2 mb-6 uppercase tracking-tight">{t("visit.title")}</h2>
             <p className="text-lg text-muted-foreground">
-              {t("visit.subtitle")}
+              {t("visit.subtitle1")}
+              <a href="https://www.pamartisan.com" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80 transition-colors">{t("visit.subtitleLink")}</a>
+              {t("visit.subtitle2")}
             </p>
           </div>
 

@@ -55,7 +55,9 @@ const translations = {
     
     "visit.label": "Der originale Wienerbagel",
     "visit.title": "Unsere Standorte",
-    "visit.subtitle": "Unsere Reise begann beim www.pamartisan.com, wo Wienerbagel seine ersten Gäste begeisterte. Jetzt gehen wir den nächsten Schritt: Bald eröffnen wir unsere eigene Wienerbagel-Location im Herzen des 1. Bezirks – und bringen den Bagel zurück an seinen Ursprungsort: Wien.",
+    "visit.subtitle1": "Unsere Reise begann beim ",
+    "visit.subtitleLink": "www.pamartisan.com",
+    "visit.subtitle2": ", wo Wienerbagel seine ersten Gäste begeisterte. Jetzt gehen wir den nächsten Schritt: Bald eröffnen wir unsere eigene Wienerbagel-Location im Herzen des 1. Bezirks – und bringen den Bagel zurück an seinen Ursprungsort: Wien.",
     "visit.location": "Standort 1",
     "visit.location2": "Standort 2",
     "visit.location3": "Standort 3",
@@ -115,7 +117,9 @@ const translations = {
     
     "visit.label": "The Original Wienerbagel",
     "visit.title": "Our Locations",
-    "visit.subtitle": "Our journey began at www.pamartisan.com, where Wienerbagel delighted its first guests. Now we're taking the next step: Soon we'll open our own Wienerbagel location in the heart of the 1st District – bringing the bagel back to its origin: Vienna.",
+    "visit.subtitle1": "Our journey began at ",
+    "visit.subtitleLink": "www.pamartisan.com",
+    "visit.subtitle2": ", where Wienerbagel delighted its first guests. Now we're taking the next step: Soon we'll open our own Wienerbagel location in the heart of the 1st District – bringing the bagel back to its origin: Vienna.",
     "visit.location": "Location 1",
     "visit.location2": "Location 2",
     "visit.location3": "Location 3",
