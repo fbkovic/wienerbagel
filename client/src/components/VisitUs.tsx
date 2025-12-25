@@ -1,7 +1,7 @@
 import { Section } from "./ui/section";
 import { Button } from "./ui/button";
 import { MapPin, Clock, Phone, ArrowUpRight } from "lucide-react";
-import visitUsImg from "@assets/stock_images/modern_cozy_bagel_sh_72cdc2d4.jpg";
+import visitUsImg from "@assets/IMG_3572_1766674389993.PNG";
 
 export function VisitUs() {
   return (
