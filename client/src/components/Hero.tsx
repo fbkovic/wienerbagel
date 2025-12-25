@@ -9,12 +9,7 @@ export function Hero() {
   
   return (
     <div id="hero" className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1623334053912-3269ae9df407?q=80&w=2070&auto=format&fit=crop"
-          alt="Fresh Bagels"
-          className="w-full h-full object-cover"
-        />
+      <div className="absolute inset-0 z-0 bg-black">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
 
