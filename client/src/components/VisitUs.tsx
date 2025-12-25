@@ -65,17 +65,6 @@ export function VisitUs() {
               alt="Storefront"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-8 flex flex-col justify-end">
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl">
-                 <p className="text-white font-medium">{t("visit.review")}</p>
-                 <div className="flex gap-1 mt-2">
-                   {[1,2,3,4,5].map(i => (
-                     <span key={i} className="text-secondary text-lg">★</span>
-                   ))}
-                 </div>
-                 <p className="text-white/60 text-sm mt-1">{t("visit.reviewer")}</p>
-              </div>
-            </div>
         </div>
       </div>
     </Section>
