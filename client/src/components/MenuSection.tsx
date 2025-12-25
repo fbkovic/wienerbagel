@@ -3,17 +3,24 @@ import { Section } from "./ui/section";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { Loader2 } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
 
 export function MenuSection() {
   const { data: menuItems, isLoading } = useMenu();
+  const { t, language } = useI18n();
 
-  const categories = ["Classic", "Signature", "Sweet", "Drinks"];
+  const categories = [
+    { key: "Classic", label: t("menu.classic") },
+    { key: "Signature", label: t("menu.signature") },
+    { key: "Sweet", label: t("menu.sweet") },
+    { key: "Drinks", label: t("menu.drinks") }
+  ];
 
   return (
     <Section id="menu" bg="creme">
       <div className="text-center mb-12">
-        <span className="text-primary font-bold tracking-widest uppercase text-sm">Fresh from the Oven</span>
-        <h2 className="text-4xl md:text-5xl font-logo font-bold mt-2 uppercase tracking-tight">Our Menu</h2>
+        <span className="text-primary font-bold tracking-widest uppercase text-sm">{t("menu.label")}</span>
+        <h2 className="text-4xl md:text-5xl font-logo font-bold mt-2 uppercase tracking-tight">{t("menu.title")}</h2>
       </div>
 
       {isLoading ? (
@@ -25,20 +32,20 @@ export function MenuSection() {
           <TabsList className="flex flex-wrap justify-center w-full h-auto bg-transparent gap-2 mb-12">
             {categories.map((cat) => (
               <TabsTrigger
-                key={cat}
-                value={cat}
+                key={cat.key}
+                value={cat.key}
                 className="px-6 py-3 rounded-full border border-border data-[state=active]:bg-foreground data-[state=active]:text-white text-lg font-medium transition-all"
               >
-                {cat}
+                {cat.label}
               </TabsTrigger>
             ))}
           </TabsList>
 
           {categories.map((cat) => (
-            <TabsContent key={cat} value={cat} className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <TabsContent key={cat.key} value={cat.key} className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {menuItems
-                  ?.filter((item) => item.category.includes(cat))
+                  ?.filter((item) => item.category.includes(cat.key))
                   .map((item) => (
                     <motion.div
                       key={item.id}
@@ -62,9 +69,9 @@ export function MenuSection() {
                   ))}
               </div>
               
-              {menuItems?.filter((item) => item.category.includes(cat)).length === 0 && (
+              {menuItems?.filter((item) => item.category.includes(cat.key)).length === 0 && (
                 <div className="text-center py-12 text-muted-foreground">
-                  No items currently available in this category.
+                  {t("menu.empty")}
                 </div>
               )}
             </TabsContent>

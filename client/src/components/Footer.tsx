@@ -1,6 +1,9 @@
+import { useI18n } from "@/lib/i18n";
 import logoImg from "@assets/wienerbagel1683_1766673703223.png";
 
 export function Footer() {
+  const { t } = useI18n();
+
   return (
     <footer className="bg-foreground text-white py-12 border-t border-white/10">
       <div className="container mx-auto px-4 text-center">
@@ -15,8 +18,8 @@ export function Footer() {
         </div>
 
         <p className="text-white/40 text-sm">
-          © {new Date().getFullYear()} Wienerbagel GmbH. All rights reserved. <br />
-          Est. 1683 in Wien. Re-Est. 2025.
+          © {new Date().getFullYear()} Wienerbagel GmbH. {t("footer.rights")} <br />
+          {t("footer.established")}
         </p>
       </div>
     </footer>

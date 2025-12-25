@@ -1,26 +1,29 @@
 import { Section } from "./ui/section";
 import { motion } from "framer-motion";
 import { Wheat, Globe, Flame } from "lucide-react";
-
-const usps = [
-  {
-    icon: Wheat,
-    title: "Hand-Rolled",
-    description: "Every single bagel is rolled by hand, boiled in kettle water with honey, and baked on stone."
-  },
-  {
-    icon: Globe,
-    title: "Vienna Born",
-    description: "Legend says the bagel was invented here in 1683. We're bringing the original recipe back home."
-  },
-  {
-    icon: Flame,
-    title: "Fresh Daily",
-    description: "Baked fresh every single morning. No preservatives, just flour, water, yeast, salt, and malt."
-  }
-];
+import { useI18n } from "@/lib/i18n";
 
 export function USPSection() {
+  const { t } = useI18n();
+  
+  const usps = [
+    {
+      icon: Wheat,
+      title: t("usp.handRolled.title"),
+      description: t("usp.handRolled.desc")
+    },
+    {
+      icon: Globe,
+      title: t("usp.viennaBorn.title"),
+      description: t("usp.viennaBorn.desc")
+    },
+    {
+      icon: Flame,
+      title: t("usp.freshDaily.title"),
+      description: t("usp.freshDaily.desc")
+    }
+  ];
+
   return (
     <Section bg="white" className="border-b border-border">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">

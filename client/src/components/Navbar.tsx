@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useI18n } from "@/lib/i18n";
 import logoImg from "@assets/wienerbagel1683_1766673703223.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [location] = useLocation();
+  const { t } = useI18n();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +22,10 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#hero" },
-    { name: "Our Story", href: "#story" },
-    { name: "Menu", href: "#menu" },
-    { name: "Visit Us", href: "#visit" },
+    { name: t("nav.home"), href: "#hero" },
+    { name: t("nav.story"), href: "#story" },
+    { name: t("nav.menu"), href: "#menu" },
+    { name: t("nav.visit"), href: "#visit" },
   ];
 
   return (
@@ -36,12 +39,10 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <Link href="/" className="group flex items-center z-50">
             <img src={logoImg} alt="Wienerbagel Logo" className="h-14 w-auto group-hover:scale-105 transition-transform" />
           </Link>
 
-          {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
@@ -52,22 +53,22 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
+            <LanguageSwitcher />
             <Button className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-6">
-              Order Now
+              {t("nav.order")}
             </Button>
           </div>
 
-          {/* Mobile Menu Toggle */}
           <button
             className="md:hidden p-2 text-foreground z-50"
             onClick={() => setIsMobileOpen(!isMobileOpen)}
+            data-testid="button-mobile-menu"
           >
             {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <div
         className={cn(
           "fixed inset-0 bg-background z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 md:hidden",
@@ -84,8 +85,9 @@ export function Navbar() {
             {link.name}
           </a>
         ))}
+        <LanguageSwitcher className="my-4" />
         <Button size="lg" className="rounded-full bg-primary text-white mt-8">
-          Order Online
+          {t("nav.order")}
         </Button>
       </div>
     </nav>
