@@ -5,7 +5,6 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useI18n } from "@/lib/i18n";
-import logoImg from "@assets/wienerbagel1683_1766673703223.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,7 +39,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="group flex items-center z-50">
-            <img src={logoImg} alt="Wienerbagel Logo" className="h-20 w-auto group-hover:scale-105 transition-transform" />
+            <span className="text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors">WIENERBAGEL</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
