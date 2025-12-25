@@ -28,7 +28,7 @@ export function Hero() {
           <motion.img 
             src={logoImg} 
             alt="Wienerbagel Logo" 
-            className="h-48 w-auto mx-auto mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+            className="h-64 w-auto mx-auto mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}

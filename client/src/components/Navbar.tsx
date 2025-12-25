@@ -40,7 +40,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="group flex items-center z-50">
-            <img src={logoImg} alt="Wienerbagel Logo" className="h-14 w-auto group-hover:scale-105 transition-transform" />
+            <img src={logoImg} alt="Wienerbagel Logo" className="h-20 w-auto group-hover:scale-105 transition-transform" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
