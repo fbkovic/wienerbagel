@@ -27,7 +27,7 @@ export function Hero() {
           <motion.img 
             src={logoImg} 
             alt="Wienerbagel Logo" 
-            className="h-32 w-auto mx-auto mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
+            className="h-48 w-auto mx-auto mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
@@ -36,10 +36,7 @@ export function Hero() {
             From Vienna to NYC & Back
           </span>
           
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-logo font-bold tracking-tighter leading-tight drop-shadow-2xl">
-            THE ORIGINAL <br />
-            <span className="text-primary">WIENER</span>BAGEL
-          </h1>
+          <h1 className="sr-only">WIENERBAGEL - THE ORIGINAL</h1>
           
           <p className="max-w-xl mx-auto text-lg md:text-2xl text-white/90 font-light leading-relaxed">
             Where the bagel was born in 1683 – and finally returned home.

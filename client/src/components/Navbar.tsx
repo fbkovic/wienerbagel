@@ -37,16 +37,8 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-3 z-50">
-            <img src={logoImg} alt="Wienerbagel Logo" className="h-10 w-auto invert dark:invert-0" />
-            <div className="flex flex-col items-start">
-              <span className="font-logo font-bold text-xl tracking-tight text-foreground leading-none group-hover:text-primary transition-colors uppercase">
-                WIENER<span className="text-primary">BAGEL</span>
-              </span>
-              <span className="text-[0.6rem] font-medium tracking-[0.2em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
-                Est. 1683 Vienna
-              </span>
-            </div>
+          <Link href="/" className="group flex items-center z-50">
+            <img src={logoImg} alt="Wienerbagel Logo" className="h-14 w-auto group-hover:scale-105 transition-transform" />
           </Link>
 
           {/* Desktop Nav */}

@@ -1,10 +1,12 @@
+import logoImg from "@assets/wienerbagel1683_1766673703223.png";
+
 export function Footer() {
   return (
     <footer className="bg-foreground text-white py-12 border-t border-white/10">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="font-logo font-bold text-3xl tracking-tight mb-4 uppercase">
-          WIENER<span className="text-primary">BAGEL</span>
-        </h2>
+        <div className="flex justify-center mb-6">
+          <img src={logoImg} alt="Wienerbagel Logo" className="h-20 w-auto invert" />
+        </div>
         
         <div className="flex justify-center gap-8 mb-8 text-sm font-medium text-white/60">
           <a href="#" className="hover:text-white transition-colors">Instagram</a>
