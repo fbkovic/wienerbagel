@@ -18,7 +18,7 @@ export function Footer() {
         </div>
 
         <p className="text-white/40 text-sm">
-          © {new Date().getFullYear()} Wienerbagel GmbH. {t("footer.rights")} <br />
+          © {new Date().getFullYear()} Wienerbagel. {t("footer.rights")} <br />
           {t("footer.established")}
         </p>
       </div>
