@@ -1,6 +1,7 @@
 import { Section } from "./ui/section";
 import { Button } from "./ui/button";
 import { MapPin, Clock, Phone, ArrowUpRight } from "lucide-react";
+import visitUsImg from "@assets/stock_images/modern_cozy_bagel_sh_72cdc2d4.jpg";
 
 export function VisitUs() {
   return (
@@ -58,9 +59,8 @@ export function VisitUs() {
 
         {/* Image/Map Side */}
         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
-            {/* Unsplash: Coffee Shop Exterior */}
             <img 
-              src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop" 
+              src={visitUsImg} 
               alt="Storefront"
               className="absolute inset-0 w-full h-full object-cover"
             />
