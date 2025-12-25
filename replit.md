@@ -19,10 +19,7 @@ A modern, NYC-style landing page for a Bagel Café in Vienna.
 - **Database**: `npm run db:push`
 - **Run**: `npm run dev`
 
-## Design System
-- **Colors**:
-    - Vienna-Red: `#C41E3A`
-    - Imperial Gold: `#D4AF37`
-    - Black: `#1A1A1A`
-    - Creme-White: `#F8F6F0`
-- **Fonts**: Inter / Montserrat (Sans-serif)
+## Recent Changes
+- Integrated custom Wienerbagel 1683 logo into Navbar and Hero sections (Dec 25, 2025)
+- Added historical imagery to the Story Timeline section using attached assets (Dec 25, 2025)
+- Enhanced visual hierarchy with logo placement and animated scroll reveals (Dec 25, 2025)

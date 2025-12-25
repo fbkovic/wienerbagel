@@ -1,24 +1,30 @@
 import { Section } from "./ui/section";
 import { motion } from "framer-motion";
+import originImg from "@assets/Gemini_Generated_Image_665h6q665h6q665h_1766673066758.png";
+import journeyImg from "@assets/9e3d95a3-30a9-413b-afbc-6d9092ddac85_1766673066758.png";
+import legendImg from "@assets/wienerbagel_1683_1766673066759.png";
 
 const timelineEvents = [
   {
     year: "1683",
     location: "Vienna, Austria",
     title: "The Invention",
-    description: "Legend tells of a Jewish baker in Vienna creating a stirrup-shaped bread (Beugel) to thank the King of Poland for saving the city from the Ottomans."
+    description: "Legend tells of a Jewish baker in Vienna creating a stirrup-shaped bread (Beugel) to thank the King of Poland for saving the city from the Ottomans.",
+    image: originImg
   },
   {
     year: "1880",
     location: "New York City",
     title: "The Migration",
-    description: "Eastern European immigrants bring their beloved bread to the Lower East Side of Manhattan. The 'Bagel' is born in America."
+    description: "Eastern European immigrants bring their beloved bread to the Lower East Side of Manhattan. The 'Bagel' is born in America.",
+    image: journeyImg
   },
   {
     year: "1950",
     location: "USA",
     title: "The Golden Age",
-    description: "Bagels become an American staple. Lox and Schmear becomes the ultimate brunch icon worldwide."
+    description: "Bagels become an American staple. Lox and Schmear becomes the ultimate brunch icon worldwide.",
+    image: legendImg
   },
   {
     year: "2025",
@@ -44,7 +50,7 @@ export function StoryTimeline() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className={`relative pl-8 md:pl-0 flex flex-col md:flex-row gap-8 ${
+            className={`relative pl-8 md:pl-0 flex flex-col md:flex-row gap-8 items-center ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >
@@ -68,8 +74,14 @@ export function StoryTimeline() {
               </div>
             </div>
 
-            {/* Empty side for layout balance */}
-            <div className="hidden md:block md:w-1/2" />
+            {/* Image Side */}
+            <div className="md:w-1/2 px-4">
+              {event.image && (
+                <div className="rounded-lg overflow-hidden border border-white/10 shadow-2xl">
+                  <img src={event.image} alt={event.title} className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" />
+                </div>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

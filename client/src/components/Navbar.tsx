@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImg from "@assets/wienerbagel1683_1766673703223.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,13 +37,16 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="group flex flex-col items-start z-50">
-            <span className="font-display font-black text-2xl tracking-tighter text-foreground leading-none group-hover:text-primary transition-colors">
-              WIENER<span className="text-primary">BAGEL</span>
-            </span>
-            <span className="text-[0.65rem] font-medium tracking-[0.2em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
-              Est. 1683 Vienna
-            </span>
+          <Link href="/" className="group flex items-center gap-3 z-50">
+            <img src={logoImg} alt="Wienerbagel Logo" className="h-10 w-auto invert dark:invert-0" />
+            <div className="flex flex-col items-start">
+              <span className="font-display font-black text-xl tracking-tighter text-foreground leading-none group-hover:text-primary transition-colors">
+                WIENER<span className="text-primary">BAGEL</span>
+              </span>
+              <span className="text-[0.6rem] font-medium tracking-[0.2em] uppercase text-muted-foreground group-hover:text-foreground transition-colors">
+                Est. 1683 Vienna
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
