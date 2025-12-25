@@ -32,6 +32,26 @@ export function VisitUs() {
 
             <div className="flex items-start gap-4">
               <div className="bg-background p-3 rounded-full border border-border">
+                <MapPin className="w-6 h-6 text-muted-foreground" />
+              </div>
+              <div>
+                <h4 className="font-bold text-lg">{t("visit.location2")}</h4>
+                <p className="text-muted-foreground italic">{t("visit.comingSoon")}</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="bg-background p-3 rounded-full border border-border">
+                <MapPin className="w-6 h-6 text-muted-foreground" />
+              </div>
+              <div>
+                <h4 className="font-bold text-lg">{t("visit.location3")}</h4>
+                <p className="text-muted-foreground italic">{t("visit.comingSoon")}</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="bg-background p-3 rounded-full border border-border">
                 <Clock className="w-6 h-6 text-primary" />
               </div>
               <div>
