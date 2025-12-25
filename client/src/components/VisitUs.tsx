@@ -49,7 +49,7 @@ export function VisitUs() {
               </div>
               <div>
                 <h4 className="font-bold text-lg">{t("visit.contact")}</h4>
-                <p className="text-muted-foreground">+43 660 737 77 61<br />office@wienerbagel.com</p>
+                <p className="text-muted-foreground">office@wienerbagel.com</p>
               </div>
             </div>
           </div>
