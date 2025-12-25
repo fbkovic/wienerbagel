@@ -1,0 +1,190 @@
+Perfekt – hier ist **ein kompletter, kopierfertiger MASTER-PROMPT**, den du **1:1 in Replit (AI / Generate App)** einfügen kannst.
+Er ist so geschrieben, dass Replit **die gesamte Website automatisch erstellt** (Design, Struktur, Content, Responsive, SEO-Basics).
+
+---
+
+## ✅ REPLIT MASTER PROMPT
+
+*(Einfach alles kopieren & in Replit einfügen)*
+
+---
+
+**PROMPT START**
+
+Du bist ein Senior Full-Stack Webdesigner & Frontend-Developer mit starkem Fokus auf Branding, UX/UI und moderne Restaurant-Websites.
+
+Erstelle eine **vollständige, produktionsreife Website** für ein neues Bagel-Café in Wien.
+
+---
+
+## 🔹 PROJEKT
+
+**Name:** WIENERBAGEL
+**Domain:** [www.wienerbagel.com](http://www.wienerbagel.com)
+**Claim:** *Est. 1683 in Wien*
+**Konzept:**
+Der Bagel wurde 1683 in Wien erfunden und ist nach 342 Jahren aus New York zurückgekehrt.
+Die Marke verbindet **Wiener Geschichte + NYC Bagel Culture**.
+
+---
+
+## 🔹 TECH STACK (BITTE EINHALTEN)
+
+* **Framework:** Next.js (App Router) ODER reines HTML/CSS/JS (wenn einfacher)
+* **Styling:** Tailwind CSS
+* **Fonts:**
+
+  * Headline: Sans-Serif (Gotham/Futura-ähnlich → z.B. Inter, Poppins oder Montserrat)
+  * Body: Clean & modern
+* **Responsive:** Mobile-First, perfekt für Smartphone
+* **SEO:** saubere Meta-Tags, strukturierte Überschriften
+* **Performance:** schnell, clean, kein unnötiger Code
+
+---
+
+## 🔹 DESIGN STYLE
+
+* Modern NYC-Style
+* Bold, clean, hochwertig
+* Instagram-tauglich
+* Keine verspielten oder cartoonhaften Elemente
+
+### 🎨 FARBEN
+
+* Wien-Rot: `#C41E3A`
+* Imperial Gold: `#D4AF37`
+* Schwarz: `#1A1A1A`
+* Creme-Weiß: `#F8F6F0`
+
+---
+
+## 🔹 SEITENSTRUKTUR
+
+### 1️⃣ HOME
+
+**Hero Section**
+
+* Großes Statement:
+
+  > *WIENERBAGEL*
+  > *Est. 1683 in Wien*
+* Subline:
+
+  > *Where the bagel was born – and returned.*
+* Call-to-Action Buttons:
+
+  * „Our Story“
+  * „Visit Us“
+
+**USP Section (3 Spalten)**
+
+* 🥯 Hand-rolled & kettle-boiled
+* 🏛 Born in Vienna, perfected in NYC
+* ❤️ Authentic. Fresh. Daily.
+
+**History Teaser**
+
+* Kurzer Text zur Bagel-Geschichte
+* Link zur „History“-Sektion
+
+**Instagram Teaser**
+
+* Grid-Platzhalter
+* Text: *Follow us @wienerbagel*
+
+---
+
+### 2️⃣ OUR STORY
+
+Timeline-Style Sektion:
+
+* **1683 – Vienna**
+  Kurzer Text zur Erfindung des Bagels (Steigbügel, König Jan Sobieski)
+
+* **1880–1920 – New York**
+  Jüdische Einwanderer bringen den Bagel nach NYC
+
+* **1950–2000 – NYC Legend**
+  Bagel wird Kult („Lox & Schmear“)
+
+* **2025 – Back Home**
+  Wienerbagel bringt den Bagel zurück nach Wien
+
+Visuell:
+
+* Horizontale Timeline
+* Icons
+* Große Jahreszahlen
+
+---
+
+### 3️⃣ MENU
+
+Kategorien:
+
+* Classic Bagels
+* Signature Bagels
+* Sweet Bagels
+* Drinks
+
+Jedes Item:
+
+* Name
+* Kurzbeschreibung
+* Preis (€ Platzhalter)
+
+---
+
+### 4️⃣ VISIT US
+
+* Adresse (Platzhalter: Wien, 1. Bezirk)
+* Öffnungszeiten
+* Google-Maps Embed (Placeholder)
+* CTA: „Get Directions“
+
+---
+
+### 5️⃣ FOOTER
+
+* Logo Text
+* Social Icons (Instagram, TikTok)
+* Copyright:
+  © Wienerbagel – Est. 1683 in Wien
+
+---
+
+## 🔹 FUNKTIONALE ANFORDERUNGEN
+
+* Sticky Navigation
+* Smooth Scrolling
+* Hover-Effekte
+* Mobile Menü (Hamburger)
+* Saubere Ordnerstruktur
+* Kommentierter Code
+
+---
+
+## 🔹 OUTPUT ANFORDERUNG
+
+* Erstelle **alle benötigten Dateien**
+* Vollständiger, lauffähiger Code
+* Keine Platzhalter wie „Lorem Ipsum“ – **echte Texte schreiben**
+* Verwende semantisches HTML
+* Bereit für Deployment
+
+---
+
+**PROMPT ENDE**
+
+---
+
+## 💡 Nächster Schritt
+
+Wenn du willst, kann ich dir auch:
+
+* 🔹 eine **Version mit Online-Bestellung**
+* 🔹 eine **Landingpage-Variante**
+* 🔹 oder eine **SEO-optimierte Touristen-Version**
+  schreiben – sag einfach Bescheid.
+
+Willst du die Seite **auf Deutsch, Englisch oder zweisprachig**?
