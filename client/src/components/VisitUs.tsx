@@ -26,7 +26,7 @@ export function VisitUs() {
               </div>
               <div>
                 <h4 className="font-bold text-lg">{t("visit.location")}</h4>
-                <p className="text-muted-foreground">Bäckerstraße 12<br />1010 Wien, Austria</p>
+                <p className="text-muted-foreground">Kirchengasse 17/2<br />1070 Wien, Austria</p>
               </div>
             </div>
 
