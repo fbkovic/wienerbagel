@@ -9,8 +9,7 @@ export function Hero() {
   
   return (
     <div id="hero" className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
-      <div className="absolute inset-0 z-0 bg-black">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-zinc-700 via-zinc-800 to-black">
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
