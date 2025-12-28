@@ -5,9 +5,9 @@ import { api } from "@shared/routes";
 import { z } from "zod";
 
 export async function registerRoutes(
-  httpServer: Server,
+  httpServer: Server | null,
   app: Express
-): Promise<Server> {
+): Promise<Server | null> {
   // Read-only endpoint - no authentication needed for viewing menu
   app.get(api.menu.list.path, async (req, res) => {
     const items = await storage.getMenuItems();
@@ -39,7 +39,7 @@ export async function registerRoutes(
       console.log("Seeded menu items");
     }
   };
-  
+
   // Run seed
   seedMenu().catch(console.error);
 
