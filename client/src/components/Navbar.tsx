@@ -31,8 +31,8 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
-        isScrolled 
-          ? "bg-background/95 backdrop-blur-md shadow-sm border-border/50 py-2" 
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-sm border-border/50 py-2"
           : "bg-transparent py-4"
       )}
     >
@@ -53,9 +53,6 @@ export function Navbar() {
               </a>
             ))}
             <LanguageSwitcher />
-            <Button className="rounded-full bg-primary hover:bg-primary/90 text-white font-bold px-6">
-              {t("nav.order")}
-            </Button>
           </div>
 
           <button
@@ -85,9 +82,6 @@ export function Navbar() {
           </a>
         ))}
         <LanguageSwitcher className="my-4" />
-        <Button size="lg" className="rounded-full bg-primary text-white mt-8">
-          {t("nav.order")}
-        </Button>
       </div>
     </nav>
   );
