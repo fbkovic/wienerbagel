@@ -8,26 +8,14 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  // Read-only endpoint - no authentication needed for viewing menu
   app.get(api.menu.list.path, async (req, res) => {
     const items = await storage.getMenuItems();
     res.json(items);
   });
 
-  app.post(api.menu.create.path, async (req, res) => {
-    try {
-      const input = api.menu.create.input.parse(req.body);
-      const item = await storage.createMenuItem(input);
-      res.status(201).json(item);
-    } catch (err) {
-      if (err instanceof z.ZodError) {
-        return res.status(400).json({
-          message: err.errors[0].message,
-          field: err.errors[0].path.join('.'),
-        });
-      }
-      throw err;
-    }
-  });
+  // POST endpoint removed for security - menu items are seeded on startup
+  // If admin functionality is needed, implement proper authentication first
 
   // Seed data function
   const seedMenu = async () => {

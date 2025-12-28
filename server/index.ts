@@ -2,6 +2,8 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
 
 const app = express();
 const httpServer = createServer(app);
@@ -12,15 +14,41 @@ declare module "http" {
   }
 }
 
+// Security headers
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+      fontSrc: ["'self'", "https://fonts.gstatic.com"],
+      imgSrc: ["'self'", "data:", "https:"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      connectSrc: ["'self'", "ws:", "wss:"],
+    },
+  },
+  crossOriginEmbedderPolicy: false,
+}));
+
+// Rate limiting for API routes
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: { message: "Too many requests, please try again later." },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
+app.use("/api", apiLimiter);
+
 app.use(
   express.json({
+    limit: "10kb", // Limit body size to prevent DoS
     verify: (req, _res, buf) => {
       req.rawBody = buf;
     },
   }),
 );
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false, limit: "10kb" }));
 
 export function log(message: string, source = "express") {
   const formattedTime = new Date().toLocaleTimeString("en-US", {
@@ -62,12 +90,20 @@ app.use((req, res, next) => {
 (async () => {
   await registerRoutes(httpServer, app);
 
+  // Global error handler - sanitize errors in production
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
-    const message = err.message || "Internal Server Error";
+    const isProduction = process.env.NODE_ENV === "production";
+    
+    // Log error internally but don't expose details to client
+    console.error("Server error:", err);
+    
+    // Only show generic message in production
+    const message = isProduction && status === 500 
+      ? "Internal Server Error" 
+      : err.message || "Internal Server Error";
 
     res.status(status).json({ message });
-    throw err;
   });
 
   // importantly only setup vite in development and after
