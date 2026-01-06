@@ -21,7 +21,7 @@ export function Hero() {
         >
           <motion.img
             src={logoImg}
-            alt="Wienerbagel Logo"
+            alt="Wiener Bagel - Original New York Bagels in Wien Logo"
             className="h-64 w-auto mx-auto mb-8 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -31,7 +31,7 @@ export function Hero() {
             {t("hero.tagline")}
           </span>
 
-          <h1 className="sr-only">WIENERBAGEL - THE ORIGINAL</h1>
+          <h1 className="sr-only">Wiener Bagel - Authentische New York Bagels in Wien</h1>
 
           <p className="max-w-xl mx-auto text-lg md:text-2xl text-white/90 font-light leading-relaxed">
             {t("hero.subtitle")}

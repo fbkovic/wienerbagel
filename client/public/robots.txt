@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.wienerbagel.com/sitemap.xml

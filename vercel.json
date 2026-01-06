@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "name": "wienerbagel-webseite",
     "buildCommand": "npm run build",
     "installCommand": "npm install",
     "framework": null,
