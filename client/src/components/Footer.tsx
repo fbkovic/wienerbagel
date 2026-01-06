@@ -8,7 +8,12 @@ export function Footer() {
     <footer className="bg-foreground text-white py-12 border-t border-white/10">
       <div className="container mx-auto px-4 text-center">
         <div className="flex justify-center mb-6">
-          <img src={logoImg} alt="Wienerbagel Logo" className="h-36 w-auto" />
+          <img
+            src={logoImg}
+            alt="Wiener Bagel Logo - Authentische New York Bagels in Wien"
+            loading="lazy"
+            className="h-36 w-auto"
+          />
         </div>
 
         <div className="flex justify-center gap-8 mb-8 text-sm font-medium text-white/60">

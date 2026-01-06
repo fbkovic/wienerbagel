@@ -54,9 +54,8 @@ export function StoryTimeline() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className={`relative pl-8 md:pl-0 flex flex-col md:flex-row gap-8 items-center ${
-              index % 2 === 0 ? "md:flex-row-reverse" : ""
-            }`}
+            className={`relative pl-8 md:pl-0 flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+              }`}
           >
             <div className="absolute left-[-5px] md:left-1/2 md:-ml-[5px] w-[12px] h-[12px] rounded-full bg-secondary border-4 border-black z-10" />
 
@@ -79,7 +78,12 @@ export function StoryTimeline() {
             <div className="md:w-1/2 px-4">
               {event.image && (
                 <div className="rounded-lg overflow-hidden border border-white/10 shadow-2xl">
-                  <img src={event.image} alt={event.title} className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500" />
+                  <img
+                    src={event.image}
+                    alt={`Wiener Bagel Geschichte: ${event.title} - ${event.year}`}
+                    loading="lazy"
+                    className="w-full h-auto grayscale hover:grayscale-0 transition-all duration-500"
+                  />
                 </div>
               )}
             </div>

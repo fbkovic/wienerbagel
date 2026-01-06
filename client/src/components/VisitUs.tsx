@@ -82,11 +82,12 @@ export function VisitUs() {
         </div>
 
         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl">
-            <img 
-              src={visitUsImg} 
-              alt="Storefront"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+          <img
+            src={visitUsImg}
+            alt="Wiener Bagel - Unser Standort in Wien, Kirchengasse"
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
       </div>
     </Section>
