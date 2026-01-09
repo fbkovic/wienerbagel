@@ -2,7 +2,7 @@ import { Section } from "./ui/section";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import originImg from "@assets/Gemini_Generated_Image_665h6q665h6q665h_1766673066758.png";
-import journeyImg from "@assets/9e3d95a3-30a9-413b-afbc-6d9092ddac85_1766673066758.png";
+import journeyImg from "@assets/bagel_reise_2026.png";
 import legendImg from "@assets/wienerbagel_1683_1766673066759.png";
 
 export function StoryTimeline() {
