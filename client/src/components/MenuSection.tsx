@@ -12,15 +12,15 @@ export function MenuSection() {
   ];
 
   const menuItemsProposal = [
-    { id: 1, category: "Classic", name: "Lachs Bagel", description: "Creamcheese, Gurke, Senf oder Siracha Mayonnaise, Kapern" },
-    { id: 2, category: "Classic", name: "Pastrami Bagel", description: "Creamcheese, Pastrami, Bergkäse, Senf oder Siracha Mayonnaise" },
-    { id: 3, category: "Classic", name: "French Bagel", description: "Creamcheese, Brie, Bergkäse, Fruchtchutney" },
-    { id: 4, category: "Classic", name: "Hummus Bagel", description: "Hummus, Melanzani, Gurke. Vegane Option verfügbar" },
-    { id: 5, category: "Classic", name: "Leberkäse Bagel", description: "Leberkäse, Senf, Essiggurken" },
-    { id: 6, category: "Classic", name: "Chicken Mayo Bagel", description: "Chicken, Mayonnaise, Gurke" },
-    { id: 7, category: "Classic", name: "Sloppy Joe Bagel", description: "Rindfleisch, Sauce, Parmesan" },
-    { id: 8, category: "Sweet", name: "Apfelstrudel Bagel", description: "Warme Apfel-Zimt Füllung, Vanillesauce" },
-    { id: 9, category: "Sweet", name: "Nutella Bagel", description: "Nutella, Banane oder Erdbeeren" },
+    { id: 1, category: "Classic", name: t("menu.lachs.name"), description: t("menu.lachs.desc") },
+    { id: 2, category: "Classic", name: t("menu.pastrami.name"), description: t("menu.pastrami.desc") },
+    { id: 3, category: "Classic", name: t("menu.french.name"), description: t("menu.french.desc") },
+    { id: 4, category: "Classic", name: t("menu.hummus.name"), description: t("menu.hummus.desc") },
+    { id: 5, category: "Classic", name: t("menu.leberkaese.name"), description: t("menu.leberkaese.desc") },
+    { id: 6, category: "Classic", name: t("menu.chicken.name"), description: t("menu.chicken.desc") },
+    { id: 7, category: "Classic", name: t("menu.sloppy.name"), description: t("menu.sloppy.desc") },
+    { id: 8, category: "Sweet", name: t("menu.apfel.name"), description: t("menu.apfel.desc") },
+    { id: 9, category: "Sweet", name: t("menu.nutella.name"), description: t("menu.nutella.desc") },
   ];
 
   return (
