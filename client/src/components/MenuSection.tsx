@@ -21,7 +21,6 @@ export function MenuSection() {
     { id: 7, category: "Classic", name: "Sloppy Joe Bagel", description: "Rindfleisch, Sauce, Parmesan" },
     { id: 8, category: "Sweet", name: "Apfelstrudel Bagel", description: "Warme Apfel-Zimt Füllung, Vanillesauce" },
     { id: 9, category: "Sweet", name: "Nutella Bagel", description: "Nutella, Banane oder Erdbeeren" },
-    { id: 10, category: "Sweet", name: "Dessert Bagel", description: "Täglich wechselnde Überraschung" },
   ];
 
   return (
