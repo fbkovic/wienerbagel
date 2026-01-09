@@ -17,19 +17,17 @@ const translations = {
     "nav.menu": "Speisekarte",
     "nav.visit": "Besuchen",
     "nav.order": "Jetzt Bestellen",
-    
+
     "hero.tagline": "Von Wien nach NYC & zurück",
     "hero.subtitle": "Wo das Bagel 1683 geboren wurde – und endlich nach Hause zurückgekehrt ist.",
     "hero.viewMenu": "Speisekarte",
     "hero.ourStory": "Unsere Story",
-    
-    "usp.handRolled.title": "Handgerollt",
-    "usp.handRolled.desc": "Jedes einzelne Bagel wird von Hand gerollt, in Kesselwasser mit Honig gekocht und auf Stein gebacken.",
+
     "usp.viennaBorn.title": "In Wien Geboren",
     "usp.viennaBorn.desc": "Die Legende besagt, das Bagel wurde hier 1683 erfunden. Wir bringen das Original-Rezept nach Hause.",
     "usp.freshDaily.title": "Täglich Frisch",
-    "usp.freshDaily.desc": "Jeden Morgen frisch gebacken. Keine Konservierungsstoffe, nur Mehl, Wasser, Hefe, Salz und Malz.",
-    
+    "usp.freshDaily.desc": "Jeden Morgen frisch gebacken. Keine Konservierungsstoffe, nur Mehl, Wasser, Hefe und Salz.",
+
     "story.label": "Unsere Geschichte",
     "story.title": "Die Reise nach Hause",
     "story.1683.location": "Wien, Österreich",
@@ -44,7 +42,7 @@ const translations = {
     "story.2025.location": "Wien, Österreich",
     "story.2025.title": "Die Heimkehr",
     "story.2025.desc": "Wienerbagel bringt das perfektionierte NYC-Style Bagel an seinen Geburtsort zurück. Der Kreis schließt sich.",
-    
+
     "menu.label": "Frisch aus dem Ofen",
     "menu.title": "Unsere Speisekarte",
     "menu.classic": "Klassisch",
@@ -52,15 +50,13 @@ const translations = {
     "menu.sweet": "Süß",
     "menu.drinks": "Getränke",
     "menu.empty": "Aktuell keine Artikel in dieser Kategorie verfügbar.",
-    
+
     "visit.label": "Der originale Wienerbagel",
-    "visit.title": "Unsere Standorte",
+    "visit.title": "Unser Standort",
     "visit.subtitle1": "Unsere Reise begann beim ",
     "visit.subtitleLink": "www.pamartisan.com",
     "visit.subtitle2": ", wo Wienerbagel seine ersten Gäste begeisterte. Jetzt gehen wir den nächsten Schritt: Bald eröffnen wir unsere eigene Wienerbagel-Location im Herzen des 1. Bezirks – und bringen den Bagel zurück an seinen Ursprungsort: Wien.",
-    "visit.location": "Standort 1",
-    "visit.location2": "Standort 2",
-    "visit.location3": "Standort 3",
+    "visit.location": "Standort",
     "visit.comingSoon": "Coming Soon",
     "visit.hours": "Öffnungszeiten",
     "visit.contact": "Kontakt",
@@ -69,7 +65,7 @@ const translations = {
     "visit.directions": "Wegbeschreibung",
     "visit.review": "\"Das beste Bagel, das ich außerhalb von Brooklyn gegessen habe. Endlich in Wien!\"",
     "visit.reviewer": "- Anna S., Local Guide",
-    
+
     "footer.rights": "Alle Rechte vorbehalten.",
     "footer.established": "Gegr. 1683 in Wien. Neu-Gegr. 2025."
   },
@@ -79,19 +75,17 @@ const translations = {
     "nav.menu": "Menu",
     "nav.visit": "Visit Us",
     "nav.order": "Order Now",
-    
+
     "hero.tagline": "From Vienna to NYC & Back",
     "hero.subtitle": "Where the bagel was born in 1683 – and finally returned home.",
     "hero.viewMenu": "View Menu",
     "hero.ourStory": "Our Story",
-    
-    "usp.handRolled.title": "Hand-Rolled",
-    "usp.handRolled.desc": "Every single bagel is rolled by hand, boiled in kettle water with honey, and baked on stone.",
+
     "usp.viennaBorn.title": "Vienna Born",
     "usp.viennaBorn.desc": "Legend says the bagel was invented here in 1683. We're bringing the original recipe back home.",
     "usp.freshDaily.title": "Fresh Daily",
-    "usp.freshDaily.desc": "Baked fresh every single morning. No preservatives, just flour, water, yeast, salt, and malt.",
-    
+    "usp.freshDaily.desc": "Baked fresh every single morning. No preservatives, just flour, water, yeast and salt.",
+
     "story.label": "Our History",
     "story.title": "The Journey Home",
     "story.1683.location": "Vienna, Austria",
@@ -106,7 +100,7 @@ const translations = {
     "story.2025.location": "Vienna, Austria",
     "story.2025.title": "The Homecoming",
     "story.2025.desc": "Wienerbagel brings the perfected NYC-style bagel back to its birthplace. The circle is complete.",
-    
+
     "menu.label": "Fresh from the Oven",
     "menu.title": "Our Menu",
     "menu.classic": "Classic",
@@ -114,15 +108,13 @@ const translations = {
     "menu.sweet": "Sweet",
     "menu.drinks": "Drinks",
     "menu.empty": "No items currently available in this category.",
-    
+
     "visit.label": "The Original Wienerbagel",
-    "visit.title": "Our Locations",
+    "visit.title": "Our Location",
     "visit.subtitle1": "Our journey began at ",
     "visit.subtitleLink": "www.pamartisan.com",
     "visit.subtitle2": ", where Wienerbagel delighted its first guests. Now we're taking the next step: Soon we'll open our own Wienerbagel location in the heart of the 1st District – bringing the bagel back to its origin: Vienna.",
-    "visit.location": "Location 1",
-    "visit.location2": "Location 2",
-    "visit.location3": "Location 3",
+    "visit.location": "Location",
     "visit.comingSoon": "Coming Soon",
     "visit.hours": "Opening Hours",
     "visit.contact": "Contact",
@@ -131,7 +123,7 @@ const translations = {
     "visit.directions": "Get Directions",
     "visit.review": "\"Best Bagel I've had outside of Brooklyn. Finally in Vienna!\"",
     "visit.reviewer": "- Anna S., Local Guide",
-    
+
     "footer.rights": "All rights reserved.",
     "footer.established": "Est. 1683 in Wien. Re-Est. 2025."
   }

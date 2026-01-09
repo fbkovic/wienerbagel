@@ -1,32 +1,27 @@
 import { Section } from "./ui/section";
 import { motion } from "framer-motion";
-import { Wheat, Globe, Flame } from "lucide-react";
+import { Globe, Flame } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 export function USPSection() {
   const { t } = useI18n();
-  
+
   const usps = [
     {
-      icon: Wheat,
-      title: t("usp.handRolled.title"),
-      description: t("usp.handRolled.desc")
+      icon: Flame,
+      title: t("usp.freshDaily.title"),
+      description: t("usp.freshDaily.desc")
     },
     {
       icon: Globe,
       title: t("usp.viennaBorn.title"),
       description: t("usp.viennaBorn.desc")
-    },
-    {
-      icon: Flame,
-      title: t("usp.freshDaily.title"),
-      description: t("usp.freshDaily.desc")
     }
   ];
 
   return (
     <Section bg="white" className="border-b border-border">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
         {usps.map((usp, index) => (
           <motion.div
             key={index}
