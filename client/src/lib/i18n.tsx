@@ -19,12 +19,12 @@ const translations = {
     "nav.order": "Jetzt Bestellen",
 
     "hero.tagline": "Von Wien nach NYC & zurück",
-    "hero.subtitle": "Wo das Bagel 1683 geboren wurde – und endlich nach Hause zurückgekehrt ist.",
+    "hero.subtitle": "Wo der Bagel 1683 geboren wurde – und endlich nach Hause zurückgekehrt ist.",
     "hero.viewMenu": "Speisekarte",
     "hero.ourStory": "Unsere Story",
 
     "usp.viennaBorn.title": "In Wien Geboren",
-    "usp.viennaBorn.desc": "Die Legende besagt, das Bagel wurde hier 1683 erfunden. Wir bringen das Original-Rezept nach Hause.",
+    "usp.viennaBorn.desc": "Die Legende besagt, der Bagel wurde hier 1683 erfunden. Wir bringen das Original-Rezept nach Hause.",
     "usp.freshDaily.title": "Täglich Frisch",
     "usp.freshDaily.desc": "Jeden Morgen frisch gebacken. Keine Konservierungsstoffe, nur Mehl, Wasser, Hefe und Salz.",
 
@@ -82,7 +82,7 @@ const translations = {
     "visit.weekdays": "Täglich: 07:50 - 17:00 Uhr",
     "visit.weekends": "(außer Feiertagen)",
     "visit.directions": "Wegbeschreibung",
-    "visit.review": "\"Das beste Bagel, das ich außerhalb von Brooklyn gegessen habe. Endlich in Wien!\"",
+    "visit.review": "\"Der beste Bagel, den ich außerhalb von Brooklyn gegessen habe. Endlich in Wien!\"",
     "visit.reviewer": "- Anna S., Local Guide",
 
     "footer.rights": "Alle Rechte vorbehalten.",
