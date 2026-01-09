@@ -17,8 +17,7 @@ export function Footer() {
         </div>
 
         <div className="flex justify-center gap-8 mb-8 text-sm font-medium text-white/60">
-          <a href="#" className="hover:text-white transition-colors">Instagram</a>
-          <a href="#" className="hover:text-white transition-colors">Facebook</a>
+          <a href="https://www.instagram.com/wienerbagel/?igsh=MWpxcDlvODUwdjRkaA%3D%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
           <a href="#" className="hover:text-white transition-colors">TikTok</a>
         </div>
 
