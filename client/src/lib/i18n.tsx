@@ -39,9 +39,9 @@ const translations = {
     "story.1950.location": "USA",
     "story.1950.title": "Das Goldene Zeitalter",
     "story.1950.desc": "Bagels werden zum amerikanischen Grundnahrungsmittel. Lox und Schmear wird zur ultimativen Brunch-Ikone weltweit.",
-    "story.2025.location": "Wien, Österreich",
-    "story.2025.title": "Die Heimkehr",
-    "story.2025.desc": "Wienerbagel bringt das perfektionierte NYC-Style Bagel an seinen Geburtsort zurück. Der Kreis schließt sich.",
+    "story.2026.location": "Wien, Österreich",
+    "story.2026.title": "Die Heimkehr",
+    "story.2026.desc": "Wienerbagel bringt das perfektionierte NYC-Style Bagel an seinen Geburtsort zurück. Der Kreis schließt sich.",
 
     "menu.label": "Frisch aus dem Ofen",
     "menu.title": "Speisekarte",
@@ -95,7 +95,7 @@ const translations = {
     "reviews.3.author": "Thomas B.",
 
     "footer.rights": "Alle Rechte vorbehalten.",
-    "footer.established": "Gegr. 1683 in Wien. Neu-Gegr. 2025."
+    "footer.established": "Gegr. 1683 in Wien. Neu-Gegr. 2026."
   },
   en: {
     "nav.home": "Home",
@@ -125,9 +125,9 @@ const translations = {
     "story.1950.location": "USA",
     "story.1950.title": "The Golden Age",
     "story.1950.desc": "Bagels become an American staple. Lox and Schmear becomes the ultimate brunch icon worldwide.",
-    "story.2025.location": "Vienna, Austria",
-    "story.2025.title": "The Homecoming",
-    "story.2025.desc": "Wienerbagel brings the perfected NYC-style bagel back to its birthplace. The circle is complete.",
+    "story.2026.location": "Vienna, Austria",
+    "story.2026.title": "The Homecoming",
+    "story.2026.desc": "Wienerbagel brings the perfected NYC-style bagel back to its birthplace. The circle is complete.",
 
     "menu.label": "Fresh from the Oven",
     "menu.title": "Menu",
@@ -181,7 +181,7 @@ const translations = {
     "reviews.3.author": "Thomas B.",
 
     "footer.rights": "All rights reserved.",
-    "footer.established": "Est. 1683 in Wien. Re-Est. 2025."
+    "footer.established": "Est. 1683 in Wien. Re-Est. 2026."
   }
 } as const;
 

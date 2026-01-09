@@ -31,10 +31,10 @@ export function StoryTimeline() {
       image: legendImg
     },
     {
-      year: "2025",
-      location: t("story.2025.location"),
-      title: t("story.2025.title"),
-      description: t("story.2025.desc"),
+      year: "2026",
+      location: t("story.2026.location"),
+      title: t("story.2026.title"),
+      description: t("story.2026.desc"),
       image: journeyImg
     }
   ];
