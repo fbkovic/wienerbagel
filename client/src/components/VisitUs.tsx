@@ -74,6 +74,19 @@ export function VisitUs() {
           />
         </div>
       </div>
+
+      <div className="mt-16 w-full h-[400px] rounded-2xl overflow-hidden shadow-lg border border-border">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.1348!2d16.3533633!3d48.2008324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079361a45719%3A0xe5f87b3b3a3a3a3a!2sKirchengasse%2017%2F2%2C%201070%20Wien%2C%20Austria!5e0!3m2!1sen!2sde!4v1700000000000"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Wiener Bagel Standort Karte"
+        ></iframe>
+      </div>
     </Section>
   );
 }
