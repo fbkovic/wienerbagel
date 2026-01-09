@@ -44,10 +44,10 @@ const translations = {
     "story.2025.desc": "Wienerbagel bringt das perfektionierte NYC-Style Bagel an seinen Geburtsort zurück. Der Kreis schließt sich.",
 
     "menu.label": "Frisch aus dem Ofen",
-    "menu.title": "Unsere Speisekarte",
-    "menu.classic": "Klassisch",
+    "menu.title": "Speisekarte",
+    "menu.classic": "Bagel Klassiker",
     "menu.signature": "Signature",
-    "menu.sweet": "Süß",
+    "menu.sweet": "Bagel Sweet",
     "menu.drinks": "Getränke",
     "menu.empty": "Aktuell keine Artikel in dieser Kategorie verfügbar.",
 
@@ -102,10 +102,10 @@ const translations = {
     "story.2025.desc": "Wienerbagel brings the perfected NYC-style bagel back to its birthplace. The circle is complete.",
 
     "menu.label": "Fresh from the Oven",
-    "menu.title": "Our Menu",
-    "menu.classic": "Classic",
+    "menu.title": "Menu",
+    "menu.classic": "Bagel Classics",
     "menu.signature": "Signature",
-    "menu.sweet": "Sweet",
+    "menu.sweet": "Bagel Sweet",
     "menu.drinks": "Drinks",
     "menu.empty": "No items currently available in this category.",
 

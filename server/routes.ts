@@ -19,24 +19,40 @@ export async function registerRoutes(
 
   // Seed data function
   const seedMenu = async () => {
+    // For local proposal, we can clear and re-seed if we want to ensure the new menu is shown
+    // But safely, let's just update the seeds list and check if we should apply it
     const existing = await storage.getMenuItems();
-    if (existing.length === 0) {
+
+    // If you want to force re-seed, you could remove this check or check if a specific new item exists
+    if (existing.length === 0 || existing.some(item => item.name === "Plain")) {
+      // Clear existing if it's the old menu (containing "Plain")
+      // Note: storage doesn't have a clear method, so if we're using a DB we'd need to handle that.
+      // For now, let's just define the new seeds.
       const seeds = [
-        { category: "Classic Bagels", name: "Plain", description: "Simple and classic.", price: "€ 3.50" },
-        { category: "Classic Bagels", name: "Sesame", description: "Topped with toasted sesame seeds.", price: "€ 3.80" },
-        { category: "Classic Bagels", name: "Everything", description: "The NYC classic with everything on it.", price: "€ 3.90" },
-        { category: "Signature Bagels", name: "The Wiener", description: "Mini Schnitzel, lingonberry jam, lemon.", price: "€ 8.90" },
-        { category: "Signature Bagels", name: "The NYC", description: "Smoked salmon (Lox), cream cheese, capers, onion.", price: "€ 9.50" },
-        { category: "Signature Bagels", name: "The Rubens", description: "Pastrami, sauerkraut, swiss cheese, russian dressing.", price: "€ 9.20" },
-        { category: "Sweet Bagels", name: "Cinnamon Raisin", description: "Sweet dough with cinnamon and raisins.", price: "€ 4.20" },
-        { category: "Sweet Bagels", name: "Blueberry", description: "Fresh blueberries baked in.", price: "€ 4.50" },
-        { category: "Drinks", name: "Wiener Melange", description: "Classic Viennese coffee.", price: "€ 4.20" },
-        { category: "Drinks", name: "Cold Brew", description: "Steeped for 12 hours.", price: "€ 4.50" },
+        { category: "Classic", name: "Lachs Bagel", description: "Creamcheese, Gurke, Senf oder Siracha Mayonnaise, Kapern", price: "€ 9.50" },
+        { category: "Classic", name: "Pastrami Bagel", description: "Creamcheese, Pastrami, Bergkäse, Senf oder Siracha Mayonnaise", price: "€ 9.80" },
+        { category: "Classic", name: "French Bagel", description: "Creamcheese, Brie, Bergkäse, Fruchtchutney", price: "€ 8.90" },
+        { category: "Classic", name: "Hummus Bagel", description: "Hummus, Melanzani, Gurke. Vegane Option verfügbar", price: "€ 8.50" },
+        { category: "Classic", name: "Leberkäse Bagel", description: "Leberkäse, Senf, Essiggurken", price: "€ 7.90" },
+        { category: "Classic", name: "Chicken Mayo Bagel", description: "Chicken, Mayonnaise, Gurke", price: "€ 8.80" },
+        { category: "Classic", name: "Sloppy Joe Bagel", description: "Rindfleisch, Sauce, Parmesan", price: "€ 9.20" },
+
+        { category: "Sweet", name: "Apfelstrudel Bagel", description: "Warme Apfel-Zimt Füllung, Vanillesauce", price: "€ 5.50" },
+        { category: "Sweet", name: "Nutella Bagel", description: "Nutella, Banane oder Erdbeeren", price: "€ 4.90" },
+        { category: "Sweet", name: "Dessert Bagel", description: "Täglich wechselnde Überraschung", price: "€ 5.20" },
       ];
-      for (const item of seeds) {
-        await storage.createMenuItem(item);
+
+      // If we found the old menu, we'd ideally want to clear it. 
+      // Since storage doesn't expose a clear/delete, we'll just skip adding if it's already there
+      // unless we want to assume MemStorage where we can't easily clear without restarting.
+      if (existing.some(item => item.name === "Plain")) {
+        console.log("Old menu detected. Please restart server or clear DB to see the new menu proposal.");
+      } else if (existing.length === 0) {
+        for (const item of seeds) {
+          await storage.createMenuItem(item);
+        }
+        console.log("Seeded new menu items");
       }
-      console.log("Seeded menu items");
     }
   };
 
