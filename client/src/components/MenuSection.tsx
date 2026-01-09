@@ -12,16 +12,16 @@ export function MenuSection() {
   ];
 
   const menuItemsProposal = [
-    { id: 1, category: "Classic", name: "Lachs Bagel", description: "Creamcheese, Gurke, Senf oder Siracha Mayonnaise, Kapern", price: "€ 9.50" },
-    { id: 2, category: "Classic", name: "Pastrami Bagel", description: "Creamcheese, Pastrami, Bergkäse, Senf oder Siracha Mayonnaise", price: "€ 9.80" },
-    { id: 3, category: "Classic", name: "French Bagel", description: "Creamcheese, Brie, Bergkäse, Fruchtchutney", price: "€ 8.90" },
-    { id: 4, category: "Classic", name: "Hummus Bagel", description: "Hummus, Melanzani, Gurke. Vegane Option verfügbar", price: "€ 8.50" },
-    { id: 5, category: "Classic", name: "Leberkäse Bagel", description: "Leberkäse, Senf, Essiggurken", price: "€ 7.90" },
-    { id: 6, category: "Classic", name: "Chicken Mayo Bagel", description: "Chicken, Mayonnaise, Gurke", price: "€ 8.80" },
-    { id: 7, category: "Classic", name: "Sloppy Joe Bagel", description: "Rindfleisch, Sauce, Parmesan", price: "€ 9.20" },
-    { id: 8, category: "Sweet", name: "Apfelstrudel Bagel", description: "Warme Apfel-Zimt Füllung, Vanillesauce", price: "€ 5.50" },
-    { id: 9, category: "Sweet", name: "Nutella Bagel", description: "Nutella, Banane oder Erdbeeren", price: "€ 4.90" },
-    { id: 10, category: "Sweet", name: "Dessert Bagel", description: "Täglich wechselnde Überraschung", price: "€ 5.20" },
+    { id: 1, category: "Classic", name: "Lachs Bagel", description: "Creamcheese, Gurke, Senf oder Siracha Mayonnaise, Kapern" },
+    { id: 2, category: "Classic", name: "Pastrami Bagel", description: "Creamcheese, Pastrami, Bergkäse, Senf oder Siracha Mayonnaise" },
+    { id: 3, category: "Classic", name: "French Bagel", description: "Creamcheese, Brie, Bergkäse, Fruchtchutney" },
+    { id: 4, category: "Classic", name: "Hummus Bagel", description: "Hummus, Melanzani, Gurke. Vegane Option verfügbar" },
+    { id: 5, category: "Classic", name: "Leberkäse Bagel", description: "Leberkäse, Senf, Essiggurken" },
+    { id: 6, category: "Classic", name: "Chicken Mayo Bagel", description: "Chicken, Mayonnaise, Gurke" },
+    { id: 7, category: "Classic", name: "Sloppy Joe Bagel", description: "Rindfleisch, Sauce, Parmesan" },
+    { id: 8, category: "Sweet", name: "Apfelstrudel Bagel", description: "Warme Apfel-Zimt Füllung, Vanillesauce" },
+    { id: 9, category: "Sweet", name: "Nutella Bagel", description: "Nutella, Banane oder Erdbeeren" },
+    { id: 10, category: "Sweet", name: "Dessert Bagel", description: "Täglich wechselnde Überraschung" },
   ];
 
   return (
@@ -61,9 +61,6 @@ export function MenuSection() {
                       <h3 className="text-xl font-bold font-logo uppercase tracking-tight group-hover:text-primary transition-colors">
                         {item.name}
                       </h3>
-                      <span className="text-lg font-bold text-foreground bg-secondary/10 px-3 py-1 rounded-md">
-                        {item.price}
-                      </span>
                     </div>
                     <p className="text-muted-foreground leading-relaxed">
                       {item.description}
