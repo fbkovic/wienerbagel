@@ -1,11 +1,18 @@
 import { Section } from "./ui/section";
 import { Button } from "./ui/button";
-import { MapPin, Clock, Phone, ArrowUpRight } from "lucide-react";
+import { MapPin, Clock, Phone, ArrowUpRight, Star } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import visitUsImg from "@assets/IMG_3572_1766674389993.PNG";
+import { motion } from "framer-motion";
 
 export function VisitUs() {
   const { t } = useI18n();
+
+  const reviews = [
+    { text: t("reviews.1.text"), author: t("reviews.1.author") },
+    { text: t("reviews.2.text"), author: t("reviews.2.author") },
+    { text: t("reviews.3.text"), author: t("reviews.3.author") },
+  ];
 
   return (
     <Section id="visit" bg="white" className="border-t border-border">
@@ -86,6 +93,45 @@ export function VisitUs() {
           referrerPolicy="no-referrer-when-downgrade"
           title="Wiener Bagel Standort Karte"
         ></iframe>
+      </div>
+
+      {/* Google Reviews Section */}
+      <div className="mt-20">
+        <div className="text-center mb-10">
+          <h3 className="text-2xl md:text-3xl font-logo font-bold uppercase tracking-tight">{t("reviews.title")}</h3>
+          <p className="text-muted-foreground mt-2">{t("reviews.subtitle")}</p>
+          <div className="flex justify-center gap-1 mt-4">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+            ))}
+            <span className="ml-2 font-bold">4.6 / 5</span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {reviews.map((review, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-background p-6 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+                ))}
+              </div>
+              <p className="text-muted-foreground italic mb-4">
+                {review.text}
+              </p>
+              <p className="font-bold text-sm uppercase tracking-wider">
+                - {review.author}
+              </p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </Section>
   );

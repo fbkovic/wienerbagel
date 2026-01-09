@@ -85,6 +85,15 @@ const translations = {
     "visit.review": "\"Der beste Bagel, den ich außerhalb von Brooklyn gegessen habe. Endlich in Wien!\"",
     "visit.reviewer": "- Anna S., Local Guide",
 
+    "reviews.title": "Was unsere Gäste über PAM sagen",
+    "reviews.subtitle": "Besuche uns bei PAM \"Bagel-Breakfast-Micro Roastery\"",
+    "reviews.1.text": "„Beste Bagels in Wien! Besonders der Lachs-Bagel ist ein Traum. Man merkt die Qualität der Zutaten.“",
+    "reviews.1.author": "Markus W.",
+    "reviews.2.text": "„Super gemütliche Atmosphäre und die Bagels sind einfach authentisch New York Style. Der Kaffee ist auch fantastisch.“",
+    "reviews.2.author": "Julia H.",
+    "reviews.3.text": "„Sehr freundliches Personal und unglaublich leckere Croissants und Bagels. Ein absolutes Muss für Frühstücksfans!“",
+    "reviews.3.author": "Thomas B.",
+
     "footer.rights": "Alle Rechte vorbehalten.",
     "footer.established": "Gegr. 1683 in Wien. Neu-Gegr. 2025."
   },
@@ -161,6 +170,15 @@ const translations = {
     "visit.directions": "Get Directions",
     "visit.review": "\"Best Bagel I've had outside of Brooklyn. Finally in Vienna!\"",
     "visit.reviewer": "- Anna S., Local Guide",
+
+    "reviews.title": "What our guests say about PAM",
+    "reviews.subtitle": "Visit us at PAM \"Bagel-Breakfast-Micro Roastery\"",
+    "reviews.1.text": "\"Best bagels in Vienna! Especially the salmon bagel is a dream. You can really taste the quality of the ingredients.\"",
+    "reviews.1.author": "Markus W.",
+    "reviews.2.text": "\"Super cozy atmosphere and the bagels are simply authentic New York style. The coffee is also fantastic.\"",
+    "reviews.2.author": "Julia H.",
+    "reviews.3.text": "\"Very friendly staff and incredibly delicious croissants and bagels. An absolute must for breakfast fans!\"",
+    "reviews.3.author": "Thomas B.",
 
     "footer.rights": "All rights reserved.",
     "footer.established": "Est. 1683 in Wien. Re-Est. 2025."
