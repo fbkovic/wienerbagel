@@ -56,8 +56,10 @@ export function VisitUs() {
             </div>
           </div>
 
-          <Button size="lg" className="w-full sm:w-auto bg-foreground text-white hover:bg-foreground/90 rounded-full h-14 px-8 text-lg">
-            {t("visit.directions")} <ArrowUpRight className="ml-2 w-5 h-5" />
+          <Button asChild size="lg" className="w-full sm:w-auto bg-foreground text-white hover:bg-foreground/90 rounded-full h-14 px-8 text-lg">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Kirchengasse+17/2,+1070+Wien" target="_blank" rel="noopener noreferrer">
+              {t("visit.directions")} <ArrowUpRight className="ml-2 w-5 h-5" />
+            </a>
           </Button>
         </div>
 
