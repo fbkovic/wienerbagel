@@ -51,7 +51,9 @@ export function VisitUs() {
               </div>
               <div>
                 <h4 className="font-bold text-lg">{t("visit.contact")}</h4>
-                <p className="text-muted-foreground">office@wienerbagel.com</p>
+                <p className="text-muted-foreground">
+                  <a href="mailto:office@wienerbagel.com" className="hover:text-primary transition-colors">office@wienerbagel.com</a>
+                </p>
               </div>
             </div>
           </div>
