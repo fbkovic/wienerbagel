@@ -50,6 +50,9 @@ const translations = {
     "menu.sweet": "Bagel Sweet",
     "menu.drinks": "Getränke",
     "menu.empty": "Aktuell keine Artikel in dieser Kategorie verfügbar.",
+    "menu.img1.alt": "Speisekarte – Simple Bagels & Frühstück",
+    "menu.img2.alt": "Speisekarte – Signatur Bagels",
+    "menu.priceNote": "Alle Preise in Euro inkl. MwSt.",
 
     "menu.lachs.name": "Lachs Bagel",
     "menu.lachs.desc": "Creamcheese, Gurke, Senf oder Siracha Mayonnaise, Kapern",
@@ -136,6 +139,9 @@ const translations = {
     "menu.sweet": "Bagel Sweet",
     "menu.drinks": "Drinks",
     "menu.empty": "No items currently available in this category.",
+    "menu.img1.alt": "Menu – Simple Bagels & Breakfast",
+    "menu.img2.alt": "Menu – Signature Bagels",
+    "menu.priceNote": "All prices in Euro incl. VAT.",
 
     "menu.lachs.name": "Salmon Bagel",
     "menu.lachs.desc": "Cream cheese, cucumber, mustard or sriracha mayonnaise, capers",
