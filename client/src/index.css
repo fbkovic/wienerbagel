@@ -73,3 +73,39 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* ---------- X-Mas decoration ---------- */
+.xmas-flake {
+  position: absolute;
+  top: -12px;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  animation-name: xmas-snow;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes xmas-snow {
+  from { transform: translate3d(0, -5vh, 0); }
+  to   { transform: translate3d(var(--xmas-drift, 0px), 110vh, 0); }
+}
+
+.xmas-bulb {
+  width: 9px;
+  height: 13px;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  box-shadow: 0 0 10px 2px currentColor;
+  animation: xmas-twinkle 2.4s ease-in-out infinite;
+}
+
+@keyframes xmas-twinkle {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.35; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xmas-flake { animation: none; top: auto; }
+  .xmas-bulb  { animation: none; }
+}

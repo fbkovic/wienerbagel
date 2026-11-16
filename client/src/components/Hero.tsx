@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Snowflake } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
+import { Snowfall } from "./XmasDecor";
 import logoImg from "@assets/wienerbagel_logo_new.png";
 
 export function Hero() {
@@ -9,7 +10,8 @@ export function Hero() {
 
   return (
     <div id="hero" className="relative h-screen min-h-[700px] w-full overflow-hidden flex items-center justify-center">
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-zinc-700 via-zinc-800 to-black">
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top,#5a1220_0%,#2a0d14_40%,#0b0b0b_100%)]">
+        <Snowfall />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -30,6 +32,17 @@ export function Hero() {
           <span className="inline-block px-4 py-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm text-sm font-medium tracking-widest uppercase">
             {t("hero.tagline")}
           </span>
+
+          <div>
+            <a
+              href="#xmas"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-secondary/70 bg-secondary/15 text-secondary text-sm font-semibold tracking-wide hover:bg-secondary hover:text-black transition-colors"
+            >
+              <Snowflake size={16} strokeWidth={1.75} />
+              {t("xmas.heroBadge")}
+              <ArrowRight size={16} />
+            </a>
+          </div>
 
           <h1 className="sr-only">Wiener Bagel - Authentische New York Bagels in Wien</h1>
 

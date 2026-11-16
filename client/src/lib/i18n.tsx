@@ -10,6 +10,8 @@ interface I18nContextType {
   t: (key: TranslationKey) => string;
 }
 
+const SITE_URL = "https://www.wienerbagel.com/";
+
 const translations = {
   de: {
     "nav.home": "Startseite",
@@ -17,6 +19,30 @@ const translations = {
     "nav.menu": "Speisekarte",
     "nav.visit": "Besuchen",
     "nav.order": "Jetzt Bestellen",
+    "nav.xmas": "X-Mas",
+
+    "xmas.heroBadge": "Neu: unsere X-Mas Specials",
+    "xmas.label": "Nur in der Weihnachtszeit",
+    "xmas.subtitle": "Zwei festliche Bagels, die nach Wiener Weihnacht schmecken – mit Ente, Rotkraut, Brie und Preiselbeeren.",
+    "xmas.badge": "X-Mas Special",
+    "xmas.bagel1.name": "Ente & Rotkraut",
+    "xmas.bagel1.desc": "Zarte Ente auf würzigem Rotkraut, dazu Essiggurkerl und Senf im knusprig getoasteten Bagel.",
+    "xmas.bagel2.name": "Ente Sweet",
+    "xmas.bagel2.desc": "Zarte Ente und cremiger Brie auf Rotkraut, gekrönt von fruchtigen Preiselbeeren.",
+    "xmas.duo.alt": "X-Mas Special von PAM und Wienerbagel – zwei weihnachtliche Bagels",
+    "xmas.availability": "Erhältlich bei PAM – solange der Vorrat reicht.",
+    "xmas.cta": "So findest du uns",
+    "xmas.bagel.altSuffix": "X-Mas Special Bagel bei Wienerbagel in Wien",
+    "xmas.visitors.title": "Weihnachten in Wien: Frühstück vor dem Christkindlmarkt",
+    "xmas.visitors.intro": "Du bist zur Adventzeit in Wien? Stärke dich bei uns in Neubau mit einem frisch belegten Bagel und Kaffee, bevor es zum Weihnachtsmarkt am Spittelberg, ins MuseumsQuartier oder zum Bummeln auf die Mariahilfer Straße geht.",
+    "seo.title": "Wiener Bagel | Bagels, Frühstück & X-Mas Special in Wien",
+    "seo.description": "Bagels & Frühstück in Wien-Neubau, wenige Gehminuten vom Weihnachtsmarkt am Spittelberg. Mit X-Mas Special. Täglich 07:50–17:00, auch an Feiertagen.",
+    "xmas.logos.alt.pam": "PAM Logo mit Weihnachtsmütze",
+    "xmas.logos.alt.wb": "Wienerbagel Logo mit Weihnachtsmütze",
+
+    "bagels.label": "Frisch belegt",
+    "bagels.title": "Unsere Bagels",
+    "bagels.breakfast": "Frühstück & Simple Bagels",
 
     "hero.tagline": "Von Wien nach NYC & zurück",
     "hero.subtitle": "Wo der Bagel 1683 geboren wurde – und endlich nach Hause zurückgekehrt ist.",
@@ -83,7 +109,7 @@ const translations = {
     "visit.hours": "Öffnungszeiten",
     "visit.contact": "Kontakt",
     "visit.weekdays": "Täglich: 07:50 - 17:00 Uhr",
-    "visit.weekends": "(außer Feiertagen)",
+    "visit.weekends": "(auch an Wochenenden und Feiertagen)",
     "visit.directions": "Wegbeschreibung",
     "visit.review": "\"Der beste Bagel, den ich außerhalb von Brooklyn gegessen habe. Endlich in Wien!\"",
     "visit.reviewer": "- Anna S., Local Guide",
@@ -106,6 +132,30 @@ const translations = {
     "nav.menu": "Menu",
     "nav.visit": "Visit Us",
     "nav.order": "Order Now",
+    "nav.xmas": "X-Mas",
+
+    "xmas.heroBadge": "New: our X-Mas Specials",
+    "xmas.label": "Christmas season only",
+    "xmas.subtitle": "Two festive bagels that taste like a Viennese Christmas – with duck, red cabbage, brie and lingonberries.",
+    "xmas.badge": "X-Mas Special",
+    "xmas.bagel1.name": "Duck & Red Cabbage",
+    "xmas.bagel1.desc": "Tender duck on spiced red cabbage with pickles and mustard in a crisp toasted bagel.",
+    "xmas.bagel2.name": "Duck Sweet",
+    "xmas.bagel2.desc": "Tender duck and creamy brie on red cabbage, topped with fruity lingonberries.",
+    "xmas.duo.alt": "X-Mas Special by PAM and Wienerbagel – two Christmas bagels",
+    "xmas.availability": "Available at PAM – while stocks last.",
+    "xmas.cta": "How to find us",
+    "xmas.bagel.altSuffix": "X-Mas Special bagel at Wienerbagel in Vienna",
+    "xmas.visitors.title": "Christmas in Vienna: breakfast before the Christmas market",
+    "xmas.visitors.intro": "Visiting Vienna during Advent? Start your day with a freshly filled bagel and coffee in Neubau before heading to the Spittelberg Christmas market, the MuseumsQuartier or shopping on Mariahilfer Straße.",
+    "seo.title": "Wiener Bagel | Bagels, Breakfast & Christmas Special in Vienna",
+    "seo.description": "New York style bagels & breakfast in Vienna-Neubau, minutes from the Spittelberg Christmas market. X-Mas Special. Open daily 7:50 am–5 pm, holidays too.",
+    "xmas.logos.alt.pam": "PAM logo with Santa hat",
+    "xmas.logos.alt.wb": "Wienerbagel logo with Santa hat",
+
+    "bagels.label": "Freshly filled",
+    "bagels.title": "Our Bagels",
+    "bagels.breakfast": "Breakfast & Simple Bagels",
 
     "hero.tagline": "From Vienna to NYC & Back",
     "hero.subtitle": "Where the bagel was born in 1683 – and finally returned home.",
@@ -172,7 +222,7 @@ const translations = {
     "visit.hours": "Opening Hours",
     "visit.contact": "Contact",
     "visit.weekdays": "Daily: 07:50 - 17:00",
-    "visit.weekends": "(except public holidays)",
+    "visit.weekends": "(including weekends and public holidays)",
     "visit.directions": "Get Directions",
     "visit.review": "\"Best Bagel I've had outside of Brooklyn. Finally in Vienna!\"",
     "visit.reviewer": "- Anna S., Local Guide",
@@ -196,6 +246,9 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [language, setLanguageState] = useState<Language>(() => {
     if (typeof window !== "undefined") {
+      // ?lang=en gives the English version its own crawlable, shareable URL.
+      const fromUrl = new URLSearchParams(window.location.search).get("lang");
+      if (fromUrl === "de" || fromUrl === "en") return fromUrl;
       const saved = localStorage.getItem("wienerbagel-lang");
       if (saved === "de" || saved === "en") return saved;
     }
@@ -205,6 +258,22 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     localStorage.setItem("wienerbagel-lang", language);
     document.documentElement.lang = language;
+
+    // Keep title, description and canonical in step with the active language
+    // so search engines index the German and the English version separately.
+    const title = translations[language]["seo.title"];
+    const description = translations[language]["seo.description"];
+    const url = language === "en" ? `${SITE_URL}?lang=en` : SITE_URL;
+    document.title = title;
+    const setAttr = (selector: string, attr: string, value: string) =>
+      document.querySelector(selector)?.setAttribute(attr, value);
+    setAttr('meta[name="description"]', "content", description);
+    setAttr('link[rel="canonical"]', "href", url);
+    setAttr('meta[property="og:url"]', "content", url);
+    setAttr('meta[property="og:title"]', "content", title);
+    setAttr('meta[property="og:description"]', "content", description);
+    setAttr('meta[property="twitter:title"]', "content", title);
+    setAttr('meta[property="twitter:description"]', "content", description);
   }, [language]);
 
   const setLanguage = (lang: Language) => {

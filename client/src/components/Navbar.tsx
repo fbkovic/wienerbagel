@@ -22,6 +22,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: t("nav.home"), href: "#hero" },
+    { name: t("nav.xmas"), href: "#xmas" },
     { name: t("nav.story"), href: "#story" },
     { name: t("nav.menu"), href: "#menu" },
     { name: t("nav.visit"), href: "#visit" },

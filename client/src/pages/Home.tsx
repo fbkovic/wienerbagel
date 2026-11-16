@@ -1,7 +1,9 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { XmasSpecial } from "@/components/XmasSpecial";
 import { USPSection } from "@/components/USPSection";
 import { StoryTimeline } from "@/components/StoryTimeline";
+import { BagelGallery } from "@/components/BagelGallery";
 import { MenuSection } from "@/components/MenuSection";
 import { VisitUs } from "@/components/VisitUs";
 import { Footer } from "@/components/Footer";
@@ -27,8 +29,10 @@ export default function Home() {
       
       <main>
         <Hero />
+        <XmasSpecial />
         <USPSection />
         <StoryTimeline />
+        <BagelGallery />
         <MenuSection />
         <VisitUs />
       </main>
