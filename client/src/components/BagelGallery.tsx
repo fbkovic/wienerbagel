@@ -26,11 +26,11 @@ interface Photo {
 }
 
 const signature: Photo[] = [
-  { menuName: "Salmon", img: lachsImg, descEn: "Cream cheese, smoked salmon, capers, red cabbage, mustard, iceberg lettuce" },
+  { menuName: "Salmon", img: lachsImg, descEn: "Cream cheese, smoked salmon, capers, red cabbage, mustard, lettuce" },
   { menuName: "Pastrami", img: pastramiImg, descEn: "Cream cheese, beef pastrami, mountain cheese, lettuce, cabbage, pickles, mustard" },
-  { menuName: "Classic", img: classicImg, descEn: "Cream cheese, pickles, turkey ham, mountain cheese, cabbage, mayonnaise, lettuce" },
+  { menuName: "Classic", img: classicImg, descEn: "Cream cheese, turkey ham, mountain cheese, cabbage, mayonnaise, lettuce" },
   { menuName: "Tuna", img: thunfischImg, descEn: "Tuna, capers, olive oil, red cabbage, mayonnaise" },
-  { menuName: "Steirer TropicChick", img: chickenImg, descEn: "Styrian pulled chicken, lettuce, curry-mango sauce" },
+  { menuName: "Steirer TropiChick", img: chickenImg, descEn: "Styrian chicken, lettuce, curry-mango sauce" },
   { menuName: "Breakfast", img: omeletteImg, descEn: "Cream cheese, two-egg omelette, lettuce" },
   { menuName: "Veganoush", img: veganoushImg, descEn: "Hummus, eggplant, sun-dried tomatoes, red cabbage, cabbage, lettuce" },
   { menuName: "Leberkäs", img: leberkaesImg, descEn: "Chicken cheese Leberkäse, mustard, cabbage" },
@@ -45,7 +45,7 @@ const breakfast: Photo[] = [
 const TAG_EN: Record<string, string> = {
   vegan: "vegan",
   vegetarisch: "vegetarian",
-  scharf: "spicy",
+  warm: "warm",
 };
 
 const allItems: MenuItem[] = menuSections.flatMap((s) => s.items);

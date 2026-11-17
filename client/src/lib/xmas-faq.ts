@@ -19,7 +19,7 @@ export const xmasFaq: Record<"de" | "en", FaqEntry[]> = {
     },
     {
       q: "Was ist das X-Mas Special?",
-      a: "Zwei Bagels, die es nur in der Weihnachtszeit gibt: „Ente & Rotkraut“ mit Essiggurkerl und Senf sowie „Ente Sweet“ mit Brie, Rotkraut und Preiselbeeren.",
+      a: "Zwei Bagels mit geräucherter Entenbrust und Rotkraut, die es nur in der Weihnachtszeit gibt: „X-Mas Sweet Duck“ mit Brie und Beerenchutney sowie „X-Mas Spicy Duck“ mit Jalapeños und Spicy Kimchi Mayo, je 12,90 €.",
     },
     {
       q: "Gibt es vegane und vegetarische Bagels?",
@@ -41,7 +41,7 @@ export const xmasFaq: Record<"de" | "en", FaqEntry[]> = {
     },
     {
       q: "What is the X-Mas Special?",
-      a: "Two bagels available only during the Christmas season: “Duck & Red Cabbage” with pickles and mustard, and “Duck Sweet” with brie, red cabbage and lingonberries.",
+      a: "Two bagels with smoked duck breast and red cabbage, available only during the Christmas season: “X-Mas Sweet Duck” with brie and berry chutney, and “X-Mas Spicy Duck” with jalapeños and spicy kimchi mayo, € 12.90 each.",
     },
     {
       q: "Do you have vegan and vegetarian bagels?",
